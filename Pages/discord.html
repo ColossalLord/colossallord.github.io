@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Colossal Domain</title>
+    <link rel="shortcut icon" href="./Icons/Colossal.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Virtus Realms</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="../index.html">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                </li>
+                <li>
+                    <a href="play.html">
+                        <span class="glyphicon glyphicon-play"></span> Play</a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        <span class="glyphicon glyphicon-usd"></span> Donate</a>
+                </li>
+                <li class="active">
+                    <a href="discord.html">
+                        <span class="glyphicon glyphicon-globe"></span> Discord</a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                </li>
+                <li>
+                    <a href="issues.html">
+                        <span class="glyphicon glyphicon-remove"></span> Issues</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-book"></span> Wiki
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Getting Started</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">Guides</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Items</a>
+                        </li>
+                        <li>
+                            <a href="#">Classes</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="Shop/account.html">
+                        <span class="glyphicon glyphicon-user"></span> Account</a>
+                </li>
+                <!--li>
+                    <a href="Shop/shop.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Shop</a>
+                </li-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body onload="startTime()">
+    <div class="container">
+
+        <!--Discord Frame-->
+        <div class="jumbotron">
+            <iframe src="https://discordapp.com/widget?id=468771868472770570&theme=dark" width="350" height="500" allowtransparency="true"
+                frameborder="0"></iframe>
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer">
+            <p>
+                <a href="https://discord.gg/T48U6gf" target="_blank">Colossal Domain</a>
+                | The current time is:
+                <text id="txt"></text>
+            </p>
+
+        </div>
+        <div class="footer">
+        </div>
+
+        <!--Scripts-->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                    h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                };
+                return i;
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://chancejs.com/chance.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

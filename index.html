@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Virtus Realms</title>
+    <link rel="shortcut icon" href="./Icons/TheLawFTW.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Virtus Realms</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                </li>
+                <li>
+                    <a href="./Pages/play.html">
+                        <span class="glyphicon glyphicon-play"></span> Play</a>
+                </li>
+                <li>
+                    <a href="./Pages/donate.html">
+                        <span class="glyphicon glyphicon-usd"></span> Donate</a>
+                </li>
+                <li>
+                    <a href="./Pages/discord.html">
+                        <span class="glyphicon glyphicon-globe"></span> Discord</a>
+                </li>
+                <li>
+                    <a href="./Pages/contact.html">
+                        <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                </li>
+                <li>
+                    <a href="./Pages/issues.html">
+                        <span class="glyphicon glyphicon-remove"></span> Issues</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-book"></span> Wiki
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Getting Started</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">Guides</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Items</a>
+                        </li>
+                        <li>
+                            <a href="#">Classes</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="Shop/account.html">
+                        <span class="glyphicon glyphicon-user"></span> Account</a>
+                </li>
+                <!--li>
+                    <a href="Shop/shop.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Shop</a>
+                </li-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body onload="startTime()">
+    <div class="container">
+        <!--Warning-->
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Critical!</strong> Make sure you read all the
+            <strong>
+                <a href="#serverrules" class="alert-link">rules</a>
+            </strong> before proceeding!
+        </div>
+
+        <!--Progress Bar Template-->
+        <!--div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                style="width: 45%">
+               45% Complete
+            </div>
+        </div-->
+
+        <!--Primary Greeting-->
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Welcome!</h1>
+            <p class="lead">This is the official site for Virtus Realms, an upcoming server. The server is owned by TheLawFTW. We hope you
+                enjoy your stay here!</p>
+            <hr class="my-4">
+            <p>
+                <strong>Note: </strong>This site is still in development, and thus you may encounter some issues.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+        <!--Server Info-->
+        <div class="row">
+            <h1 class="text-center">Introduction to our Staff Team</h1>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./Icons/TheLawFTW.png" alt="...">
+                    <div class="caption">
+                        <h3>TheLawFTW</h3>
+                        <p>
+                            Server Owner
+                        </p>
+                        <p>
+                            The best reward is no reward.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-info-sign"></span> Information</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./Icons/ColossalActual.png" alt="...">
+                    <div class="caption">
+                        <h3>Colossal</h3>
+                        <p>
+                            Server Developer
+                        </p>
+                        <p>
+                            Why pay when you can play.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-info-sign"></span> Information</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./Icons/Colossal.png" alt="...">
+                    <div class="caption">
+                        <h3>Yuno-Chan!</h3>
+                        <p>
+                            Server Developer
+                        </p>
+                        <p>
+                            //Have to add quote.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-info-sign"></span> Information</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./Icons/Colossal.png" alt="...">
+                    <div class="caption">
+                        <h3>The Real MoonMan</h3>
+                        <p>
+                            Server Developer
+                        </p>
+                        <p>
+                            //Have to add quote.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-phone"></span> Contact</a>
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-info-sign"></span> Information</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Rules-->
+        <!--div class="jumbotron"-->
+            <div class="container-fluid">
+                <div class="row content col-md-offset-1">
+                    <div id="serverrules" class="col-sm-11">
+                        <hr>
+                        <h2 class="text-center">Virtus Realms Rules
+                            <!--span class="label label-pill label-danger">Rules</span-->
+                        </h2>
+                        <!--span class="label label-primary">Important</span-->
+                        </h5>
+                        <h3 class="text-center">Discord Rules</h3>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Offence</th>
+                                    <th scope="col">Punishment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <strong>Posting/Sharing NSFW.</strong>
+                                    </td>
+                                    <td>Temporary Mute for 1 week.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <strong>Toxicity against others.</strong>
+                                    </td>
+                                    <td>Warned on first offence, muted for 1 week on multiple.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <strong>Advertising non-server content.</strong>
+                                    </td>
+                                    <td>Temporary mute for 1 week.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <strong>Impersonating staff.</strong>
+                                    </td>
+                                    <td>Temporary ban for 1 week.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <strong>Spamming (chat, voice chat, mic spam).</strong>
+                                    </td>
+                                    <td>Temporary mute for 3 days.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>
+                                        <strong>Drama, arguments, fighting in server.</strong>
+                                    </td>
+                                    <td>Temporary mute for 1 day.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="text-center">In-Game Rules</h3>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Offence</th>
+                                    <th scope="col">Punishment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <strong>Exploting bugs, glitches, hacks.</strong>
+                                    </td>
+                                    <td>Permanent suspension of your account.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <strong>Abusing rank/powers.</strong>
+                                    </td>
+                                    <td>Demotion, followed by permanent suspension.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <strong>Real World Trading</strong>
+                                    </td>
+                                    <td>Permanent suspension of your account.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <strong>Begging/harrassment.</strong>
+                                    </td>
+                                    <td>Temporary mute for 1 week.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h6>Note: The Discord Rules still apply to the In-Game rules.</h6>
+                    </div>
+                </div>
+            </div>
+        <!--/div-->
+
+        <!--Testing-->
+
+        <!--div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/fF4-9Q4jV1A" allowfullscreen></iframe>
+              </div-->
+
+
+        <!--Footer-->
+        <div class="footer">
+            <p>
+                <a href="https://discord.gg/T48U6gf" target="_blank">Virtus Realms</a>
+                |
+                <span class="glyphicon glyphicon-time"></span> Time:
+                <text id="txt"></text>
+            </p>
+
+        </div>
+        <div class="footer">
+        </div>
+
+        <!--Scripts-->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                    h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                };
+                return i;
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://chancejs.com/chance.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
